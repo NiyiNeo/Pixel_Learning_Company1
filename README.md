@@ -1,10 +1,9 @@
 # Pixel_Learning_Company1
-This repository is for the Pixel Learning Co for audio content
+This repository is for the Pixel Learning Co for audio content.
 This is an overview to use AWS polly to convert text input into an MP3 audio file, then the process is automated with a Python Script and GitHub Actions 
 
 ## Instructions for Setup
 
-## AWS Credentials Setup
 First, setup the AWS Credentials Setup
 
 Create a '.env' filew with following variables:
