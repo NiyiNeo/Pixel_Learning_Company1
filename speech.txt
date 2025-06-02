@@ -1,0 +1,3 @@
+Greetings from the Pixel Learning Company.
+This is our new platform using Amazon Polly, where your text become a lifelike voice.
+Welcome to the future of audio technology!
