@@ -24,6 +24,10 @@ The script will read the speech.txt, synthesize the speech with AWS Polly.
 Save the file under a unique name (e.g., Pixel_Learning.MP3)
 Upload to MP3 to specified S3 Bucket
 
+#Create IAM User
+Create a IAM User for this service. Make sure to include permission rights, AmazonPollyFullAccess and AmazonS3 Access.
+The S3 Access can be Full access if the role for the user is appropriate (e.g., Admin).
+
 ## GitHub Actions Workflow
 Trigger Conditions
 Use GitHub Action to trigger the python script:

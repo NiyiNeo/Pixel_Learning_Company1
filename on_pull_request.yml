@@ -2,7 +2,8 @@ name: Polly Audio Beta
 
 on:
   pull_request:
-    branches: [main]
+    branches: 
+      -main
 
 jobs:
   synthesize_and_upload:
@@ -20,6 +21,5 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           S3_BUCKET_NAME: ${{ secrets.S3_BUCKET_NAME }}
-        run: python synthesize_speech.py
+         run: python synthesize.py
 
-Trigger Workflow and pass the pull request 
