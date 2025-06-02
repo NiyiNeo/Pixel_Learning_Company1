@@ -2,7 +2,8 @@ name: Polly Audio Beta
 
 on:
   pull_request:
-    branches: [main]
+    branches: 
+    -main
 
 jobs:
   synthesize_and_upload:
