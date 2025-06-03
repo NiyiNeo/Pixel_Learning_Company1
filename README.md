@@ -6,7 +6,7 @@ This is an overview to use AWS polly to convert text input into an MP3 audio fil
 
 First, setup the AWS Credentials Setup
 
-Create a '.env' filew with following variables:
+Create a '.env' file with following variables:
 
 ```env
 AWS_ACCESS_KEY_ID=your-access-key-id
@@ -20,13 +20,13 @@ Create a "speech.txt" file that has the text input for Amazon Polly. Once this i
 Ensure that the text file is properly commited and tracked in GitHub with no hidden extensions to the file.
 
 ## Run the python script synthensize.py
-The script will read the speech.txt, synthesize the speech with AWS Polly.
+The script will read the speech.txt, synthesize the speech with Amazon Polly.
 Save the file under a unique name (e.g., Pixel_Learning.MP3)
 Upload to MP3 to specified S3 Bucket
 
 #Create IAM User
-Create a IAM User for this service. Make sure to include permission rights, AmazonPollyFullAccess and AmazonS3 Access.
-The S3 Access can be Full access if the role for the user is appropriate (e.g., Admin).
+Create a IAM User for this service. Make sure to include permission rights, AmazonPollyFullAccess and AmazonS3FullAccess.
+The S3 Bucket Access can be Full access if the role for the user is appropriate (e.g., Admin).
 
 ## GitHub Actions Workflow
 Trigger Conditions
